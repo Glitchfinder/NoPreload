@@ -1,0 +1,5 @@
+author: Glitchfinder
+description: Keeps worlds from preloading.
+main: org.nopreload.NoPreload
+name: NoPreload
+version: '1.0'
