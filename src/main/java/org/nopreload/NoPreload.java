@@ -332,6 +332,13 @@ public class NoPreload extends JavaPlugin implements Listener, CommandExecutor
 
 		File fSettings = new File(getDataFolder(), "settings.npr");
 
+		try {
+			fSettings.mkdirs();
+		}
+		catch(Exception e) {
+			return;
+		}
+
 		FileOutputStream fOut = null;
 		ObjectOutputStream out = null;
 
