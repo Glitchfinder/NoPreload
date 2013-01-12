@@ -333,7 +333,7 @@ public class NoPreload extends JavaPlugin implements Listener, CommandExecutor
 		File fSettings = new File(getDataFolder(), "settings.npr");
 
 		try {
-			fSettings.mkdirs();
+			getDataFolder().mkdirs();
 		}
 		catch(Exception e) {
 			return;
