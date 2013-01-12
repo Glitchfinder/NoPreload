@@ -3,3 +3,19 @@ description: Keeps worlds from preloading.
 main: org.nopreload.NoPreload
 name: NoPreload
 version: '1.0'
+
+commands:
+    nopreload:
+        description: "Controls the NoPreload plugin."
+        usage: "/<command> [unload|disable|reset] [world]"
+        aliases: [npr, npreload]
+
+permissions:
+    nopreload.*:
+        default: op
+        description: "Implies access to everything NoPreload does."
+        children:
+            nopreload.admin: true
+    nopreload.admin:
+        default: op
+        description: "Implies access to everything NoPreload does."
